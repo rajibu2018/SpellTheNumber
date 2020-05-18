@@ -31,5 +31,39 @@ namespace SpellTheNumber.CoreServiceTests {
             var result = ConvertNumberToSpell.GetWordFromNumber(input);
             Assert.AreEqual("One", result.Word);
         }
+
+        [TestMethod]
+        public void CanGetTwoDigitNumber_Twelve() {
+            var input = new SpellNumberViewModel { Number = "12" };
+            var result = ConvertNumberToSpell.GetWordFromNumber(input);
+            Assert.AreEqual("Twelve", result.Word);
+        }
+
+        [TestMethod]
+        public void CanGetTwoDigitNumber_ThirtyNine() {
+            var input = new SpellNumberViewModel { Number = "39" };
+            var result = ConvertNumberToSpell.GetWordFromNumber(input);
+            Assert.AreEqual("Thirty Nine", result.Word);
+        }
+
+        [TestMethod]
+        public void CanConvertZero() {
+            var input = new SpellNumberViewModel { Number = "0" };
+            var result = ConvertNumberToSpell.GetWordFromNumber(input);
+            Assert.AreEqual("Zero", result.Word);
+        }
+
+        [TestMethod]
+        public void CanGetThreeDigitNumber_OneHundredThirtyNine() {
+            var input = new SpellNumberViewModel { Number = "139" };
+            var result = ConvertNumberToSpell.GetWordFromNumber(input);
+            Assert.AreEqual("One Hundred Thirty Nine", result.Word);
+        }
+        [TestMethod]
+        public void CanGetThreeDigitNumber_OneHundredTwelve() {
+            var input = new SpellNumberViewModel { Number = "112" };
+            var result = ConvertNumberToSpell.GetWordFromNumber(input);
+            Assert.AreEqual("One Hundred Twelve", result.Word);
+        }
     }
 }
