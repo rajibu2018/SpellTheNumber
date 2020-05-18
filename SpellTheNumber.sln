@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpellToNumber.CoreService",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpellToNumber.ViewModel", "SpellToNumber.ViewModel\SpellToNumber.ViewModel.csproj", "{73009C73-5471-4624-8355-F9F8E18E3EC4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestProjects", "TestProjects", "{F5B89CDE-F6BB-46C9-A1A8-B8BCA346DA86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpellTheNumber.CoreServiceTests", "SpellTheNumber.CoreServiceTests\SpellTheNumber.CoreServiceTests.csproj", "{9CC7B10B-F5C3-4907-98E7-4E8C23DC0789}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +33,10 @@ Global
 		{73009C73-5471-4624-8355-F9F8E18E3EC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73009C73-5471-4624-8355-F9F8E18E3EC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73009C73-5471-4624-8355-F9F8E18E3EC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CC7B10B-F5C3-4907-98E7-4E8C23DC0789}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CC7B10B-F5C3-4907-98E7-4E8C23DC0789}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CC7B10B-F5C3-4907-98E7-4E8C23DC0789}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CC7B10B-F5C3-4907-98E7-4E8C23DC0789}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +44,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{21589159-5336-4F91-8F71-030E3DD32528} = {A395D069-B7B1-411F-81ED-C7A23BCB528F}
 		{73009C73-5471-4624-8355-F9F8E18E3EC4} = {A395D069-B7B1-411F-81ED-C7A23BCB528F}
+		{9CC7B10B-F5C3-4907-98E7-4E8C23DC0789} = {F5B89CDE-F6BB-46C9-A1A8-B8BCA346DA86}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F345123F-12AB-4FC7-8867-25DE9D208DB4}
