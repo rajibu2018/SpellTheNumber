@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using SpellToNumber.ViewModel;
 
 namespace SpellTheNumber.Controllers
 {
@@ -10,7 +11,8 @@ namespace SpellTheNumber.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            var model = new SpellNumberViewModel();
+            return View(model);
         }
     }
 }

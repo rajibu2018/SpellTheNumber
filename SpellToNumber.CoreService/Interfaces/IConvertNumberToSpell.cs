@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SpellToNumber.CoreService.Interfaces
 {
-    interface IConvertNumberToSpell
+   public interface IConvertNumberToSpell
     {
         string GetWordFromNumber(SpellNumberViewModel number);
     }

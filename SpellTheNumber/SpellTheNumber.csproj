@@ -13,4 +13,9 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SpellToNumber.CoreService\SpellToNumber.CoreService.csproj" />
+    <ProjectReference Include="..\SpellToNumber.ViewModel\SpellToNumber.ViewModel.csproj" />
+  </ItemGroup>
+
 </Project>

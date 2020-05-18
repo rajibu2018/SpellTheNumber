@@ -4,5 +4,6 @@ using System.Text;
 
 namespace SpellToNumber.ViewModel {
     public class SpellNumberViewModel {
+        public int Number { get; set; }
     }
 }
