@@ -19,7 +19,11 @@ namespace SpellToNumber.CoreService.Impl {
             }
             return viewModel;
         }
-
+        /// <summary>
+        /// get word for the input number
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns>words</returns>
         private string SpellNumber(string input) {
             var word = string.Empty; 
             var isDone = false;//test if already translated    
@@ -85,6 +89,11 @@ namespace SpellToNumber.CoreService.Impl {
             return word;
         }
 
+        /// <summary>
+        /// get word for Ones Place
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
         private String OnesPlace(string input) {
             var name = "";
             var number = Convert.ToInt32(input);
@@ -121,6 +130,11 @@ namespace SpellToNumber.CoreService.Impl {
             return name;
         }
 
+        /// <summary>
+        /// get word for Tens Places
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
         private String TensPlaces(string input) {
            
             var name = string.Empty;
