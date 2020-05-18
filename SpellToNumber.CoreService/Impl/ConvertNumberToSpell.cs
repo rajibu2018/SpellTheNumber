@@ -45,7 +45,7 @@ namespace SpellToNumber.CoreService.Impl {
                         break;
                     case 3://hundreds'   
                         position = (numDigits % 3) + 1;
-                        place = " Hundred ";
+                        place = " Hundred and ";
                         break;
                     case 4://thousands'     
                     case 5:
