@@ -7,6 +7,6 @@ namespace SpellToNumber.CoreService.Interfaces
 {
    public interface IConvertNumberToSpell
     {
-        string GetWordFromNumber(SpellNumberViewModel number);
+        SpellNumberViewModel GetWordFromNumber(SpellNumberViewModel number);
     }
 }

@@ -1,7 +1,28 @@
-﻿
+﻿@using  SpellToNumber.ViewModel
+@model SpellNumberViewModel
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Convert number to word";
 }
 
-<h2>Index</h2>
+
+<div class="col-md-12">
+    @using (Html.BeginForm("SaveModule", "Module", FormMethod.Post)) {
+    <div class="form-group">
+
+        @Html.LabelFor(m => m.Number)
+        @Html.TextBoxFor(m => m.Number, new { placeholder = "Enter Number", @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Number)
+
+        @if (!string.IsNullOrEmpty(Model.Word)) {
+
+            @Html.LabelFor(m => m.Word)
+            @Html.DisplayTextFor(m => m.Word)
+        }
+    </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn-success" value="Convert To Words" /> 
+        </div>
+    }
+
+</div>
 
