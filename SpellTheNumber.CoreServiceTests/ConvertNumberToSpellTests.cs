@@ -12,7 +12,7 @@ namespace SpellTheNumber.CoreServiceTests {
             ConvertNumberToSpell = new ConvertNumberToSpell();
         }
         [TestMethod]
-        public void IsANumber() {
+        public void IsAcceptingANumber() {
             var input = new SpellNumberViewModel { Number = "1" };
             var result = ConvertNumberToSpell.GetWordFromNumber(input);
             Assert.AreEqual("One", result.Word);
@@ -20,10 +20,12 @@ namespace SpellTheNumber.CoreServiceTests {
 
         [TestMethod]
         public void IsAcceptingString() {
-            var input = new SpellNumberViewModel { Number = "1" };
+            var input = new SpellNumberViewModel { Number = "Test String" };
             var result = ConvertNumberToSpell.GetWordFromNumber(input);
             Assert.AreEqual("Unable to get word", result.Word);
         }
+
+        [TestMethod]
         public void CanGetSingleDigitNumber() {
             var input = new SpellNumberViewModel { Number = "1" };
             var result = ConvertNumberToSpell.GetWordFromNumber(input);
